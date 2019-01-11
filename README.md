@@ -34,6 +34,8 @@ experiments. It is their challenge to use this money wisely to collect the data 
 determine the missing connections in the network. Descriptions of the available experiments and their costs are given in the
 [experiments.md](experiments.md) file. For these experiments, players can specify both a perturbation (i.e. downregulating a
 specific gene) and a data collection type (i.e. collect RNA data vs protein data). This data will have noise and it will have error, as all experiments do.
+This data will come from the true network. Using Tellurium or some other software, students should simulate their current best guess of the
+true model/network and compare it with the data to try to improve it.
 
 Also provided is a list of [assumptions](assumptions.md) the players can make about the network. The goal of the game is to
 guess which connections are missing as accurately as possible.
