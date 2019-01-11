@@ -32,7 +32,8 @@ In the network given to players, some of the regulators will be missing.
 Players will be given a set budget at the beginning of the game ($10,000 to $15,000). They will use this money to purchase 
 experiments. It is their challenge to use this money wisely to collect the data they require to
 determine the missing connections in the network. Descriptions of the available experiments and their costs are given in the
-[experiments.md](experiments.md) file. This data will have noise and it will have error, as all experiments do.
+[experiments.md](experiments.md) file. For these experiments, players can specify both a perturbation (i.e. downregulating a
+specific gene) and a data collection type (i.e. collect RNA data vs protein data). This data will have noise and it will have error, as all experiments do.
 
 Also provided is a list of [assumptions](assumptions.md) the players can make about the network. The goal of the game is to
 guess which connections are missing as accurately as possible.
@@ -55,7 +56,7 @@ To collect data orders from students, we have created a google form: [BIOEN 498:
 
 Update the team names on the google form if necessary, and when creating the score file (step 3 below) make sure these team names match those in the score file.
 
-Students can be given the following link to fill out the form: [LINK](https://goo.gl/forms/tNdhQsd37YHjuPTJ2). They will need to be logged into their UW Google account.
+Students can be given the following [link](https://goo.gl/forms/tNdhQsd37YHjuPTJ2) to fill out the form. They will need to be logged into their UW Google account.
 
 1. Download csv from google forms
 2. Unzip csv into the same directory as `run_experiments.py`
