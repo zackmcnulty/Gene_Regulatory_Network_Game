@@ -1,17 +1,17 @@
 # Usage Instructions
 NOTE: Do not rearrange the provided files; they are required to have a specific relative path to each other, so rearranging them will break the code. Feel free to place the overall folder wherever you wish however.
 
-##### What you need
+### What you need
 
-	- [BiotapestryEditor](http://www.biotapestry.org/): For visualizing/editting gene regulatory networks
-	- Python 3.x
-	- [Tellurium](https://tellurium.readthedocs.io/en/latest/index.html): A python package for working in systems biology
+	* [BiotapestryEditor](http://www.biotapestry.org/): For visualizing/editting gene regulatory networks
+	* Python 3.x
+	* [Tellurium](https://tellurium.readthedocs.io/en/latest/index.html): A python package for working in systems biology
 
 Also, in order to use tellurium, you will have to have a good understanding the [Antimony](https://tellurium.readthedocs.io/en/latest/antimony.html) which is the
 format chemical models are passed to tellurium in.
 
 
-##### Rules of the Game
+### Rules of the Game
 
 
 At the beginning of the game, players will all be given a partially complete gene regulatory network.
@@ -37,12 +37,12 @@ determine the missing connections in the network. Descriptions of the available 
 Also provided is a list of [assumptions](assumptions.md) the players can make about the network. The goal of the game is to
 guess which connections are missing as accurately as possible.
 
-##### Generating A Model
+### Generating A Model
 In order to generate a model, you will run `GetModel.py`. I have created a helper file called `make_model.py` that makes this process easy. Open this file (`make_model.py`), and there will be some comments describing some options you have to set certain features of the model. When you are satisfied with these, run the script. You might have to run it multiple times to generate a model that is sufficiently interesting. 
 
 This will create a biotapestry file and antimony file in your current working directory. Hold on to these. It will also create `tmax.txt` in the working directory. This file should not be edited or deleted.
 
-##### Breaking the model
+### Breaking the model
 In order to break the model, i.e. remove connections, first open the BiotapestryEditor program. From there, click File > Import > Import Full Model Hierarchy from CSV and select the biotapestry CSV generated in the previous step. This will give you a visualization of the model, and from here select which connections to remove. Deleting the connections off the Biotapestry file will not work, as Biotapestry does not support this. 
 
 As such, we have written our own code for removing/adding connections, found in `change_biotapestry.py`. I have written a helper file called `break_model.py` that includes instructions for breaking the model. This will output a new CSV of the form `model_name_broken.csv`, and you can view it in the BiotapestryEditor if you like.
@@ -50,7 +50,7 @@ As such, we have written our own code for removing/adding connections, found in 
 I recommend this to be the file you give to the students.
 
 
-##### Ordering Experimental Data
+### Ordering Experimental Data
 To collect data orders from students, we have created a google form: [BIOEN 498: Experiment Request Form](https://docs.google.com/forms/d/1OFsoRf8hEJw4d3bpdQHlR1wrq_fUVGD6PmKRf3d1TdY). 
 
 Update the team names on the google form if necessary, and when creating the score file (step 3 below) make sure these team names match those in the score file.
@@ -66,7 +66,7 @@ Students can be given the following link to fill out the form: [LINK](https://go
 The students will then be sent an email from `bioen498@gmail.com` containing the data they have ordered, and an update on how much money they have remaining. If a student tries to order experiments they do not have the money for, they will receive no results.
 
 
-##### Final Notes
+### Final Notes
   * While playing the game, we generated a list of assumptions we had to make about the network. 
 	  This list is stored in `assumptions.md` in the main folder. It might be worthwhile to provide this list, or a subset of it, to the students as I think it may help answer some common questions.
   * `experiments.md` stores the list of experiments, including their descriptions and costs.
