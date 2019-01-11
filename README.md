@@ -3,9 +3,9 @@ NOTE: Do not rearrange the provided files; they are required to have a specific 
 
 ### What you need
 
-	* [BiotapestryEditor](http://www.biotapestry.org/): For visualizing/editting gene regulatory networks
-	* Python 3.x
-	* [Tellurium](https://tellurium.readthedocs.io/en/latest/index.html): A python package for working in systems biology
+* [BiotapestryEditor](http://www.biotapestry.org/): For visualizing/editting gene regulatory networks
+* Python 3.x
+* [Tellurium](https://tellurium.readthedocs.io/en/latest/index.html): A python package for working in systems biology
 
 Also, in order to use tellurium, you will have to have a good understanding the [Antimony](https://tellurium.readthedocs.io/en/latest/antimony.html) which is the
 format chemical models are passed to tellurium in.
