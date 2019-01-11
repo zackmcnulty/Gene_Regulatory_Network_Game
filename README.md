@@ -3,16 +3,26 @@ NOTE: Do not rearrange the provided files; they are required to have a specific 
 
 ##### What you need
 
-	- Biotapestry (http://www.biotapestry.org/): For visualizing/editting gene regulatory networks
+	- [BiotapestryEditor](http://www.biotapestry.org/): For visualizing/editting gene regulatory networks
 	- Python 3.x
+	- [Tellurium](https://tellurium.readthedocs.io/en/latest/index.html): A python package for working in systems biology
+
+Also, in order to use tellurium, you will have to have a good understanding the [Antimony](https://tellurium.readthedocs.io/en/latest/antimony.html) which is the
+format chemical models are passed to tellurium in.
+
 
 ##### Rules of the Game
 
-![](example_pathway.png) ![](example_pathway_BROKEN.png)
 
 At the beginning of the game, players will all be given a partially complete gene regulatory network.
 This network includes a lot of feedback mechanisms and is heavily intertwined: gene products act as regulators
-on the other genes of the network. There are 5 types of regulation: Single repression, Single activation,
+on the other genes of the network. Below on the left is an example of a full network (using Biotapestry) and to
+the right the broken one which has a few connections missing.
+
+
+![](example_pathway.png) 
+
+There are 5 types of regulation: Single repression, Single activation,
 double repression, double activation, or both a repressor AND an activator. These types of regulation follow
 the dynamics described in the equations below.
 
@@ -22,9 +32,10 @@ In the network given to players, some of the regulators will be missing.
 Players will be given a set budget at the beginning of the game ($10,000 to $15,000). They will use this money to purchase 
 experiments. It is their challenge to use this money wisely to collect the data they require to
 determine the missing connections in the network. Descriptions of the available experiments and their costs are given in the
-experiments.md file. This data will have noise and it will have error, as all experiments do.
+[experiments.md](experiments.md) file. This data will have noise and it will have error, as all experiments do.
 
-
+Also provided is a list of [assumptions](assumptions.md) the players can make about the network. The goal of the game is to
+guess which connections are missing as accurately as possible.
 
 ##### Generating A Model
 In order to generate a model, you will run `GetModel.py`. I have created a helper file called `make_model.py` that makes this process easy. Open this file (`make_model.py`), and there will be some comments describing some options you have to set certain features of the model. When you are satisfied with these, run the script. You might have to run it multiple times to generate a model that is sufficiently interesting. 
@@ -32,7 +43,7 @@ In order to generate a model, you will run `GetModel.py`. I have created a helpe
 This will create a biotapestry file and antimony file in your current working directory. Hold on to these. It will also create `tmax.txt` in the working directory. This file should not be edited or deleted.
 
 ##### Breaking the model
-In order to break the model, first open the BiotapestryEditor program. From there, click File > Import > Import Full Model Hierarchy from CSV and select the biotapestry CSV generated in the previous step. This will give you a visualization of the model, and from here select which connections to remove. Deleting the connections off the Biotapestry file will not work, as Biotapestry does not support this. 
+In order to break the model, i.e. remove connections, first open the BiotapestryEditor program. From there, click File > Import > Import Full Model Hierarchy from CSV and select the biotapestry CSV generated in the previous step. This will give you a visualization of the model, and from here select which connections to remove. Deleting the connections off the Biotapestry file will not work, as Biotapestry does not support this. 
 
 As such, we have written our own code for removing/adding connections, found in `change_biotapestry.py`. I have written a helper file called `break_model.py` that includes instructions for breaking the model. This will output a new CSV of the form `model_name_broken.csv`, and you can view it in the BiotapestryEditor if you like.
 
