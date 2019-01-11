@@ -8,8 +8,7 @@ NOTE: Do not rearrange the provided files; they are required to have a specific 
 
 ##### Rules of the Game
 
-![](example_pathway.png)
-![](example_pathway_BROKEN.png)
+![](example_pathway.png) ![](example_pathway_BROKEN.png)
 
 At the beginning of the game, players will all be given a partially complete gene regulatory network.
 This network includes a lot of feedback mechanisms and is heavily intertwined: gene products act as regulators
