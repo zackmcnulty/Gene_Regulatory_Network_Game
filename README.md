@@ -62,11 +62,12 @@ For users outside UW, simply make a copy of this form and use that link instead.
 1. Download csv from google forms
 2. Unzip csv into the same directory as `run_experiments.py`
 	* **DO NOT** clear the old experiment orders from the CSV, or modify it in any way. The code handles this for you. Just make sure you overwrite the old CSV.
-3. Run `get_data.py` (make sure the `num_genes` parameter in this file is the correct number of genes in the network. Currently set to 8.)  
+	* if someone made a mistake ordering, simply manually refund them in the team_scores.csv that is generated. DO NOT DELETE THE OLD ORDER.
+3. Run `get_data.py` (**make sure the parameters in this file are set before running! Descriptions in file.**)  
 	* NOTE: the first time you run this, it will generate a CSV to keep track of how much money each team has. Open `get_data.py` and make sure the team names in top section match those on the google form.
 
-The students will then be sent an email from `bioen498@gmail.com` containing the data they have ordered, and an update on how much money they have remaining. If a student tries to order experiments they do not have the money for, they will receive no results.
-
+The students will then be sent an email from the email provided in get_data.py containing the data they have ordered, and an update on how much money they have remaining. If a student tries to order experiments they do not have the money for, they will receive no results.
+If the student does not have money for the order, it will not be carried out.
 
 ### Final Notes
   * While playing the game, we generated a list of assumptions we had to make about the network. 
