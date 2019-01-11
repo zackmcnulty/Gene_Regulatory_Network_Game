@@ -26,7 +26,7 @@ There are 5 types of regulation: Single repression, Single activation,
 double repression, double activation, or both a repressor AND an activator. These types of regulation follow
 the dynamics described in the equations below.
 
-[insert equations]
+![](formulas.png)
 
 In the network given to players, some of the regulators will be missing. 
 Players will be given a set budget at the beginning of the game ($10,000 to $15,000). They will use this money to purchase 

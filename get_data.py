@@ -32,6 +32,8 @@ num_genes = 8
 filename = "BIOEN 498 Experiment Request Form.csv" # the file where all the experimental data orders are stored
 
 # login information for account you want emails (of data) to be sent from.
+# To avoid spam, I would create a new email address specifically for this game
+# and not use your personal one.
 fromaddr = "youremail@something.com"
 password = "yourEmailPassword"
 
