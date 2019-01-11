@@ -1,0 +1,41 @@
+Strategy
+------------------------------------------------
+- Look at broken model:
+	- what genes are "good" genes i.e. have at least 1 connection (best is both in connections are filled)
+	- compare to actual data (rnaseq or mass spec)
+- parameter estimation:
+	- differential evolution (data_analysis.py)
+	- only compare the good genes
+	- some parameters seem to matter more than others 
+		- d_p and d_m doesn't matter
+		- leak rate controls the equalibrium position
+- make some connections to match the experimental data (change_biotapestry.py)
+
+- tried aggregating protein and mRNA data, but protein was too high --> terrible parameters
+	- hone the protein parameters with mass spec data first
+
+Notes
+------------------------------------------------
+Gene 8: DA
+	rna-seq data matches with mRNA6 which is also DA
+	Probably activated by 1 or 6
+
+4,5,7: probably similar
+	likely repressed (by 3?)
+	7: repressed then ativated
+	4: 
+	3:
+
+
+2,3: probably similar
+
+
+GENE 7:
+r 	r
+7	1
+7	6
+
+GENE 4:
+r 	r
+2   6
+

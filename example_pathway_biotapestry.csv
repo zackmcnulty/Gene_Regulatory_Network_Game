@@ -1,0 +1,12 @@
+model,root,,,,
+general,root,gene,Gene 6,gene,Gene 1,positive
+general,root,gene,Gene 3,gene,Gene 1,negative
+general,root,gene,Gene 7,gene,Gene 2,negative
+general,root,gene,Gene 5,gene,Gene 3,positive
+general,root,gene,Gene 6,gene,Gene 4,negative
+general,root,box,INPUT,gene,Gene 5,negative
+general,root,gene,Gene 2,gene,Gene 5,negative
+general,root,gene,Gene 1,gene,Gene 6,positive
+general,root,gene,Gene 5,gene,Gene 6,positive
+general,root,gene,Gene 8,gene,Gene 7,positive
+general,root,gene,Gene 4,gene,Gene 8,positive

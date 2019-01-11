@@ -1,0 +1,19 @@
+Timestamp,Username,Team Name,Perturbation Type (includes ±15% error),Perturbation amount (enter a percentage),Perturbation Target(s) (Gene Number),Perturbation Specifics (Costs more!),Set Input Value to the Network,Data Collection Type,Protein Target of Data Collection (Protein Id)
+2018/10/12 4:24:39 PM MDT,rimas428@uw.edu,Quintus,Gene Upregulation,20,2,Exact perturbation (0% error),1,"Fluorescence Tagging (up to 3 proteins, high resolution time course) - every 10 mins",1;2
+2018/10/14 10:27:24 PM MDT,kittyyli@uw.edu,Scipio,Wild-type (no perturbation),,"0 (None, use for wild-type)",,1,RNA Sequencing (all mRNA) - High Resolution (every 10 mins),1
+2018/10/19 4:35:42 PM MDT,rileys53@uw.edu,Claudius,Wild-type (no perturbation),,0 (None: use for wild-type),,,Fluorescence Tagging (up to 3 proteins - high resolution time course) - every 10 mins,1;5;6
+2018/10/19 4:44:19 PM MDT,minneker@uw.edu,Quintus,Wild-type (no perturbation),,0 (None: use for wild-type),,,RNA Sequencing (all mRNA) - Low Resolution (every 20 mins),1;2;3
+2018/10/21 5:26:26 PM MDT,kittyyli@uw.edu,Scipio,Wild-type (no perturbation),,0 (None: use for wild-type),Exact perturbation (0% error),1,Mass Spectrometry (all proteins) - Low Resolution (every 20),1
+2018/10/21 5:30:34 PM MDT,sanjrj@uw.edu,Marcus,Wild-type (no perturbation),,0 (None: use for wild-type),Exact perturbation (0% error),,RNA Sequencing (all mRNA) - Low Resolution (every 20 mins),1
+2018/10/21 5:34:02 PM MDT,eriyang@uw.edu,Marcus,Gene Upregulation,50,4,Exact perturbation (0% error),,RNA Sequencing (all mRNA) - Low Resolution (every 20 mins),1
+2018/10/22 3:21:38 PM MDT,aerilynn@uw.edu,Gaius,Wild-type (no perturbation),3,0 (None: use for wild-type),,1,Mass Spectrometry (all proteins) - Low Resolution (every 20),1;5;6
+2018/10/22 3:31:53 PM MDT,verosky@uw.edu,Claudius,Wild-type (no perturbation),,0 (None: use for wild-type),,,Fluorescence Tagging (up to 3 proteins - high resolution time course) - every 10 mins,1;4;7
+2018/10/22 3:33:11 PM MDT,verosky@uw.edu,Claudius,Wild-type (no perturbation),,0 (None: use for wild-type),,,RNA Sequencing (all mRNA) - Low Resolution (every 20 mins),1
+2018/10/26 5:35:29 PM MDT,rimas428@uw.edu,Quintus,Gene Upregulation,20,7,Exact perturbation (0% error),1,Fluorescence Tagging (up to 3 proteins - high resolution time course) - every 10 mins,3;4
+2018/10/26 5:37:01 PM MDT,rimas428@uw.edu,Quintus,Wild-type (no perturbation),,0 (None: use for wild-type),,1,Mass Spectrometry (all proteins) - Low Resolution (every 20),3;4;5
+2018/10/26 7:31:36 PM MDT,hieudo09@uw.edu,Lucius,Wild-type (no perturbation),,0 (None: use for wild-type),,,Fluorescence Tagging (up to 3 proteins - high resolution time course) - every 10 mins,3;7;8
+2018/10/29 12:48:35 AM MDT,kittyyli@uw.edu,Scipio,Gene Downregulation,100,4,Exact perturbation (0% error),,Fluorescence Tagging (up to 3 proteins - high resolution time course) - every 10 mins,2;3;8
+2018/10/29 9:18:16 PM MDT,jferina@uw.edu,Lucius,Wild-type (no perturbation),,0 (None: use for wild-type),,,Fluorescence Tagging (up to 3 proteins - high resolution time course) - every 10 mins,2;4
+2018/10/31 4:05:29 PM MDT,aerilynn@uw.edu,Gaius,Gene Knockout (100% off),100,6,Increase perturbation accuracy (change to ± 5% error),,Mass Spectrometry (all proteins) - Low Resolution (every 20),1;2;4
+2018/10/31 5:57:15 PM MDT,rileys53@uw.edu,Lucius,Gene Downregulation,75,3,,,Fluorescence Tagging (up to 3 proteins - high resolution time course) - every 10 mins,1;2;3
+2018/11/02 10:40:40 AM MDT,jferina@uw.edu,Lucius,Gene Downregulation,,4,,,Fluorescence Tagging (up to 3 proteins - high resolution time course) - every 10 mins,2;7;8

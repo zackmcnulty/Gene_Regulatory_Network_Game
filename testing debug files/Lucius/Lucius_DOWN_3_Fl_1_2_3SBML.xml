@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created by libAntimony version v2.9.4 with libSBML version 5.15.0. -->
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model id="pathway" name="pathway">
+    <listOfCompartments>
+      <compartment sboTerm="SBO:0000410" id="default_compartment" spatialDimensions="3" size="1" constant="true"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="INPUT" compartment="default_compartment" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="P1" compartment="default_compartment" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="mRNA1" compartment="default_compartment" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="P2" compartment="default_compartment" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="mRNA2" compartment="default_compartment" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="P3" compartment="default_compartment" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="mRNA3" compartment="default_compartment" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="P4" compartment="default_compartment" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="mRNA4" compartment="default_compartment" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="P5" compartment="default_compartment" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="mRNA5" compartment="default_compartment" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="P6" compartment="default_compartment" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="mRNA6" compartment="default_compartment" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="P7" compartment="default_compartment" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="mRNA7" compartment="default_compartment" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="P8" compartment="default_compartment" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="mRNA8" compartment="default_compartment" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+    </listOfSpecies>
+    <listOfParameters>
+      <parameter id="d_protein1" value="0.016085185627" constant="true"/>
+      <parameter id="d_mRNA1" value="0.814784041523" constant="true"/>
+      <parameter id="L1" value="0.0208550953202" constant="true"/>
+      <parameter id="Vm1" value="0.886651850367" constant="true"/>
+      <parameter id="a_protein1" value="0.0557704471195" constant="true"/>
+      <parameter id="H1" value="7.27158373921" constant="true"/>
+      <parameter id="K1_1" value="0.0247445378849" constant="true"/>
+      <parameter id="K2_1" value="0.0207656769372" constant="true"/>
+      <parameter id="d_protein2" value="0.0137625658529" constant="true"/>
+      <parameter id="d_mRNA2" value="1.11380571858" constant="true"/>
+      <parameter id="L2" value="0.0229524016698" constant="true"/>
+      <parameter id="Vm2" value="0.641891125502" constant="true"/>
+      <parameter id="a_protein2" value="0.0975056078065" constant="true"/>
+      <parameter id="H2" value="6.05670976903" constant="true"/>
+      <parameter id="K1_2" value="0.0154429065276" constant="true"/>
+      <parameter id="d_protein3" value="0.0202297015282" constant="true"/>
+      <parameter id="d_mRNA3" value="1.156360539" constant="true"/>
+      <parameter id="L3" value="0.0211370313545" constant="true"/>
+      <parameter id="Vm3" value="1.31077362079" constant="true"/>
+      <parameter id="a_protein3" value="0.103776335423" constant="true"/>
+      <parameter id="H3" value="2.87054652554" constant="true"/>
+      <parameter id="K1_3" value="0.0256632329676" constant="true"/>
+      <parameter id="d_protein4" value="0.0212055654091" constant="true"/>
+      <parameter id="d_mRNA4" value="0.816497700494" constant="true"/>
+      <parameter id="L4" value="0.012200485038" constant="true"/>
+      <parameter id="Vm4" value="0.763045370358" constant="true"/>
+      <parameter id="a_protein4" value="0.0831045172153" constant="true"/>
+      <parameter id="H4" value="2.88763201874" constant="true"/>
+      <parameter id="K1_4" value="0.0126384065144" constant="true"/>
+      <parameter id="d_protein5" value="0.0173688171794" constant="true"/>
+      <parameter id="d_mRNA5" value="1.38403669145" constant="true"/>
+      <parameter id="L5" value="0.0141708688572" constant="true"/>
+      <parameter id="Vm5" value="1.05296684052" constant="true"/>
+      <parameter id="a_protein5" value="0.0729318494011" constant="true"/>
+      <parameter id="H5" value="5.53914986331" constant="true"/>
+      <parameter id="K1_5" value="0.0182178193048" constant="true"/>
+      <parameter id="K2_5" value="0.0206972243486" constant="true"/>
+      <parameter id="K3_5" value="0.0212048371874" constant="true"/>
+      <parameter id="d_protein6" value="0.0154156714705" constant="true"/>
+      <parameter id="d_mRNA6" value="0.689278853593" constant="true"/>
+      <parameter id="L6" value="0.0130495093055" constant="true"/>
+      <parameter id="Vm6" value="0.909852493953" constant="true"/>
+      <parameter id="a_protein6" value="0.0801025326115" constant="true"/>
+      <parameter id="H6" value="7.39301608502" constant="true"/>
+      <parameter id="K1_6" value="0.0101661584128" constant="true"/>
+      <parameter id="K2_6" value="0.0146837536402" constant="true"/>
+      <parameter id="K3_6" value="0.0193733309301" constant="true"/>
+      <parameter id="d_protein7" value="0.0172143180476" constant="true"/>
+      <parameter id="d_mRNA7" value="0.872001160009" constant="true"/>
+      <parameter id="L7" value="0.016274509706" constant="true"/>
+      <parameter id="Vm7" value="1.20420404724" constant="true"/>
+      <parameter id="a_protein7" value="0.0738252603305" constant="true"/>
+      <parameter id="H7" value="5.20892321177" constant="true"/>
+      <parameter id="K1_7" value="0.0152094838281" constant="true"/>
+      <parameter id="d_protein8" value="0.01371482796" constant="true"/>
+      <parameter id="d_mRNA8" value="0.744209549195" constant="true"/>
+      <parameter id="L8" value="0.0166582947466" constant="true"/>
+      <parameter id="Vm8" value="1.04100815694" constant="true"/>
+      <parameter id="a_protein8" value="0.0964347706184" constant="true"/>
+      <parameter id="H8" value="4.26078069853" constant="true"/>
+      <parameter id="K1_8" value="0.0167737624854" constant="true"/>
+    </listOfParameters>
+    <listOfReactions>
+      <reaction id="J1" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="mRNA1" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="P3"/>
+          <modifierSpeciesReference species="P6"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <plus/>
+                <ci> L1 </ci>
+                <apply>
+                  <times/>
+                  <ci> Vm1 </ci>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <ci> K1_1 </ci>
+                      <apply>
+                        <power/>
+                        <ci> P6 </ci>
+                        <ci> H1 </ci>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <cn type="integer"> 1 </cn>
+                      <apply>
+                        <times/>
+                        <ci> K1_1 </ci>
+                        <apply>
+                          <power/>
+                          <ci> P6 </ci>
+                          <ci> H1 </ci>
+                        </apply>
+                      </apply>
+                      <apply>
+                        <times/>
+                        <ci> K2_1 </ci>
+                        <apply>
+                          <power/>
+                          <ci> P3 </ci>
+                          <ci> H1 </ci>
+                        </apply>
+                      </apply>
+                      <apply>
+                        <times/>
+                        <ci> K1_1 </ci>
+                        <ci> K2_1 </ci>
+                        <apply>
+                          <power/>
+                          <ci> P6 </ci>
+                          <ci> H1 </ci>
+                        </apply>
+                        <apply>
+                          <power/>
+                          <ci> P3 </ci>
+                          <ci> H1 </ci>
+                        </apply>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <ci> d_mRNA1 </ci>
+                <ci> mRNA1 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="F1" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="P1" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="mRNA1"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <times/>
+                <ci> a_protein1 </ci>
+                <ci> mRNA1 </ci>
+              </apply>
+              <apply>
+                <times/>
+                <ci> d_protein1 </ci>
+                <ci> P1 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="J2" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="mRNA2" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="P7"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <plus/>
+                <ci> L2 </ci>
+                <apply>
+                  <times/>
+                  <ci> Vm2 </ci>
+                  <apply>
+                    <divide/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <plus/>
+                      <cn type="integer"> 1 </cn>
+                      <apply>
+                        <times/>
+                        <ci> K1_2 </ci>
+                        <apply>
+                          <power/>
+                          <ci> P7 </ci>
+                          <ci> H2 </ci>
+                        </apply>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <ci> d_mRNA2 </ci>
+                <ci> mRNA2 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="F2" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="P2" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="mRNA2"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <times/>
+                <ci> a_protein2 </ci>
+                <ci> mRNA2 </ci>
+              </apply>
+              <apply>
+                <times/>
+                <ci> d_protein2 </ci>
+                <ci> P2 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="J3" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="mRNA3" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="P5"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <plus/>
+                <ci> L3 </ci>
+                <apply>
+                  <times/>
+                  <ci> Vm3 </ci>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <ci> K1_3 </ci>
+                      <apply>
+                        <power/>
+                        <ci> P5 </ci>
+                        <ci> H3 </ci>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <cn type="integer"> 1 </cn>
+                      <apply>
+                        <times/>
+                        <ci> K1_3 </ci>
+                        <apply>
+                          <power/>
+                          <ci> P5 </ci>
+                          <ci> H3 </ci>
+                        </apply>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <ci> d_mRNA3 </ci>
+                <ci> mRNA3 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="F3" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="P3" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="mRNA3"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <times/>
+                <ci> a_protein3 </ci>
+                <ci> mRNA3 </ci>
+              </apply>
+              <apply>
+                <times/>
+                <ci> d_protein3 </ci>
+                <ci> P3 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="J4" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="mRNA4" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="P6"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <plus/>
+                <ci> L4 </ci>
+                <apply>
+                  <times/>
+                  <ci> Vm4 </ci>
+                  <apply>
+                    <divide/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <plus/>
+                      <cn type="integer"> 1 </cn>
+                      <apply>
+                        <times/>
+                        <ci> K1_4 </ci>
+                        <apply>
+                          <power/>
+                          <ci> P6 </ci>
+                          <ci> H4 </ci>
+                        </apply>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <ci> d_mRNA4 </ci>
+                <ci> mRNA4 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="F4" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="P4" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="mRNA4"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <times/>
+                <ci> a_protein4 </ci>
+                <ci> mRNA4 </ci>
+              </apply>
+              <apply>
+                <times/>
+                <ci> d_protein4 </ci>
+                <ci> P4 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="J5" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="mRNA5" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="INPUT"/>
+          <modifierSpeciesReference species="P2"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <plus/>
+                <ci> L5 </ci>
+                <apply>
+                  <times/>
+                  <ci> Vm5 </ci>
+                  <apply>
+                    <divide/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <plus/>
+                      <cn type="integer"> 1 </cn>
+                      <apply>
+                        <times/>
+                        <ci> K1_5 </ci>
+                        <apply>
+                          <power/>
+                          <ci> INPUT </ci>
+                          <ci> H5 </ci>
+                        </apply>
+                      </apply>
+                      <apply>
+                        <times/>
+                        <ci> K2_5 </ci>
+                        <apply>
+                          <power/>
+                          <ci> P2 </ci>
+                          <ci> H5 </ci>
+                        </apply>
+                      </apply>
+                      <apply>
+                        <times/>
+                        <ci> K1_5 </ci>
+                        <ci> K3_5 </ci>
+                        <apply>
+                          <power/>
+                          <ci> INPUT </ci>
+                          <ci> H5 </ci>
+                        </apply>
+                        <apply>
+                          <power/>
+                          <ci> P2 </ci>
+                          <ci> H5 </ci>
+                        </apply>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <ci> d_mRNA5 </ci>
+                <ci> mRNA5 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="F5" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="P5" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="mRNA5"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <times/>
+                <ci> a_protein5 </ci>
+                <ci> mRNA5 </ci>
+              </apply>
+              <apply>
+                <times/>
+                <ci> d_protein5 </ci>
+                <ci> P5 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="J6" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="mRNA6" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="P1"/>
+          <modifierSpeciesReference species="P5"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <plus/>
+                <ci> L6 </ci>
+                <apply>
+                  <times/>
+                  <ci> Vm6 </ci>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <plus/>
+                      <apply>
+                        <times/>
+                        <ci> K1_6 </ci>
+                        <apply>
+                          <power/>
+                          <ci> P1 </ci>
+                          <ci> H6 </ci>
+                        </apply>
+                      </apply>
+                      <apply>
+                        <times/>
+                        <ci> K2_6 </ci>
+                        <apply>
+                          <power/>
+                          <ci> P5 </ci>
+                          <ci> H6 </ci>
+                        </apply>
+                      </apply>
+                      <apply>
+                        <times/>
+                        <ci> K1_6 </ci>
+                        <ci> K3_6 </ci>
+                        <apply>
+                          <power/>
+                          <ci> P1 </ci>
+                          <ci> H6 </ci>
+                        </apply>
+                        <apply>
+                          <power/>
+                          <ci> P5 </ci>
+                          <ci> H6 </ci>
+                        </apply>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <cn type="integer"> 1 </cn>
+                      <apply>
+                        <times/>
+                        <ci> K1_6 </ci>
+                        <apply>
+                          <power/>
+                          <ci> P1 </ci>
+                          <ci> H6 </ci>
+                        </apply>
+                      </apply>
+                      <apply>
+                        <times/>
+                        <ci> K2_6 </ci>
+                        <apply>
+                          <power/>
+                          <ci> P5 </ci>
+                          <ci> H6 </ci>
+                        </apply>
+                      </apply>
+                      <apply>
+                        <times/>
+                        <ci> K1_6 </ci>
+                        <ci> K3_6 </ci>
+                        <apply>
+                          <power/>
+                          <ci> P1 </ci>
+                          <ci> H6 </ci>
+                        </apply>
+                        <apply>
+                          <power/>
+                          <ci> P5 </ci>
+                          <ci> H6 </ci>
+                        </apply>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <ci> d_mRNA6 </ci>
+                <ci> mRNA6 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="F6" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="P6" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="mRNA6"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <times/>
+                <ci> a_protein6 </ci>
+                <ci> mRNA6 </ci>
+              </apply>
+              <apply>
+                <times/>
+                <ci> d_protein6 </ci>
+                <ci> P6 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="J7" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="mRNA7" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="P8"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <plus/>
+                <ci> L7 </ci>
+                <apply>
+                  <times/>
+                  <ci> Vm7 </ci>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <ci> K1_7 </ci>
+                      <apply>
+                        <power/>
+                        <ci> P8 </ci>
+                        <ci> H7 </ci>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <cn type="integer"> 1 </cn>
+                      <apply>
+                        <times/>
+                        <ci> K1_7 </ci>
+                        <apply>
+                          <power/>
+                          <ci> P8 </ci>
+                          <ci> H7 </ci>
+                        </apply>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <ci> d_mRNA7 </ci>
+                <ci> mRNA7 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="F7" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="P7" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="mRNA7"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <times/>
+                <ci> a_protein7 </ci>
+                <ci> mRNA7 </ci>
+              </apply>
+              <apply>
+                <times/>
+                <ci> d_protein7 </ci>
+                <ci> P7 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="J8" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="mRNA8" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="P4"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <plus/>
+                <ci> L8 </ci>
+                <apply>
+                  <times/>
+                  <ci> Vm8 </ci>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <ci> K1_8 </ci>
+                      <apply>
+                        <power/>
+                        <ci> P4 </ci>
+                        <ci> H8 </ci>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <cn type="integer"> 1 </cn>
+                      <apply>
+                        <times/>
+                        <ci> K1_8 </ci>
+                        <apply>
+                          <power/>
+                          <ci> P4 </ci>
+                          <ci> H8 </ci>
+                        </apply>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <ci> d_mRNA8 </ci>
+                <ci> mRNA8 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="F8" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="P8" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="mRNA8"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <times/>
+                <ci> a_protein8 </ci>
+                <ci> mRNA8 </ci>
+              </apply>
+              <apply>
+                <times/>
+                <ci> d_protein8 </ci>
+                <ci> P8 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

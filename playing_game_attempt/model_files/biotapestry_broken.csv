@@ -1,0 +1,10 @@
+model,root,,,,,
+general,root,gene,Gene 4,gene,Gene 1,negative
+general,root,gene,Gene 5,gene,Gene 3,negative
+general,root,gene,Gene 6,gene,Gene 3,negative
+general,root,gene,Gene 1,gene,Gene 4,positive
+general,root,gene,Gene 8,gene,Gene 4,negative
+general,root,gene,Gene 8,gene,Gene 5,positive
+general,root,box,INPUT,gene,Gene 6,positive
+nodeOnly,root,gene,Gene 2,,,
+nodeOnly,root,gene,Gene 7,,,

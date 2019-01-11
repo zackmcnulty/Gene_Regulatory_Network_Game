@@ -1,0 +1,2 @@
+Timestamp,Username,Team Name,Perturbation Type (includes ±15% error),Perturbation amount (enter a percentage),Perturbation Target(s) (Gene Number),Perturbation Specifics (Costs more!),Set Input Value to the Network,Data Collection Type,Protein Target of Data Collection (Protein Id)
+2018/10/31 5:57:15 PM MDT,rileys53@uw.edu,Lucius,Gene Downregulation,75,3,,,Fluorescence Tagging (up to 3 proteins - high resolution time course) - every 10 mins,1;2;3
