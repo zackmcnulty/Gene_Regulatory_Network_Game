@@ -28,5 +28,6 @@ Simply ensure that num_genes is the number of genes in the network, and run the 
 !!Make sure sendEmail and updateMoney is set to False if debugging!!
 """
 num_genes = 8
+filename = "BIOEN 498 Experiment Request Form.csv" # the file where all the experimental data orders are stored
 
-export_experiments(num_genes, sendEmail=True, updateMoney=True)
+export_experiments(num_genes, csv_file=filename, sendEmail=True, updateMoney=True)

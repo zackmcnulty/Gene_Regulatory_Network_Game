@@ -57,6 +57,7 @@ To collect data orders from students, we have created a google form: [BIOEN 498:
 Update the team names on the google form if necessary, and when creating the score file (step 3 below) make sure these team names match those in the score file.
 
 Students can be given the following [link](https://goo.gl/forms/tNdhQsd37YHjuPTJ2) to fill out the form. They will need to be logged into their UW Google account.
+For users outside UW, simply make a copy of this form and use that link instead. *You will have to change the name of the form in the run_experiments.py*
 
 1. Download csv from google forms
 2. Unzip csv into the same directory as `run_experiments.py`
