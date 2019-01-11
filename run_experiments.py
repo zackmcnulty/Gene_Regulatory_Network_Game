@@ -32,7 +32,7 @@ updateMoney: Set to true to update team money by overwritting team_file.
 
 The only constant set for generating data is the noise level (set to 5%).
 """
-def export_experiments(num_genes, tmax = "tmax.txt" , csv_file="BIOEN 498 Experiment Request Form.csv", ant_file="pathway_antimony.txt",
+def export_experiments(num_genes, fromaddr, password, tmax = "tmax.txt" , csv_file="BIOEN 498 Experiment Request Form.csv", ant_file="pathway_antimony.txt",
                        team_file="team_scores.csv", sendEmail=False, updateMoney=False):
 
     #error checking
@@ -173,7 +173,7 @@ def export_experiments(num_genes, tmax = "tmax.txt" , csv_file="BIOEN 498 Experi
                 if sendEmail:
                     body = ("Here is your experiment results. You have spent " + str(money) +
                            ". Your team has " + str(money_left) + " credits left.")
-                    send_email(email, body, saveName, path, True)
+                    send_email(email, body, fromaddr, password, saveName, path, True)
                     print("Success! Emailed " + email)
             else:
                 if sendEmail:
@@ -248,8 +248,7 @@ filename: name of attachment file (including extension)
 path: path to filename (including filename)
 attachment: set to true to send email with attachments.
 """
-def send_email(toaddr, body, filename=None, path=None, attachment=False):
-    fromaddr = "bioen498@gmail.com"
+def send_email(toaddr, body, ffromaddr, password, filename=None, path=None, attachment=False):
     # instance of MIMEMultipart
     msg = MIMEMultipart()
 
@@ -277,7 +276,7 @@ def send_email(toaddr, body, filename=None, path=None, attachment=False):
     # start TLS for security
     s.starttls()
     # Authentication
-    s.login(fromaddr, "uwbioenrules!")
+    s.login(fromaddr, password)
     # Converts the Multipart msg into a string
     text = msg.as_string()
     # sending the mail
