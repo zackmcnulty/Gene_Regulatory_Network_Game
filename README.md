@@ -1,3 +1,8 @@
+This game was made with the help of myself, Kateka Seth, and Yoshi Goto under the supervision of Dr. Sauro of University of Washington - Seattle. 
+It was used in a Systems Biology class to help teach students various computational techniques and introduce them to the complexity of 
+gene regulatory networks. Good luck!
+
+
 # Usage Instructions
 NOTE: Do not rearrange the provided files; they are required to have a specific relative path to each other, so rearranging them will break the code. Feel free to place the overall folder wherever you wish however.
 
